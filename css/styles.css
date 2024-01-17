@@ -37,6 +37,11 @@ h2 {
 /* Classes */
 .list {
   list-style: none;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .link:hover,
@@ -57,8 +62,8 @@ h2 {
 
 .header-container {
   display: flex;
-  align-items: center;
-  padding: 24px 156px;
+  margin: 0 auto;
+  padding: 0 15px;
   justify-content: space-between;
 }
 
@@ -68,9 +73,11 @@ h2 {
   padding: 0 15px;
 }
 
-.header-navbar {
+.navbar {
   display: flex;
+  justify-content: center;
   align-items: center;
+  gap: 76px;
 }
 
 .logo-web {
@@ -83,7 +90,6 @@ h2 {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
-  margin-right: 76px;
 }
 
 .logo-studio {
@@ -96,15 +102,17 @@ h2 {
   font-family: var(--logo-font-family);
 }
 
-.header-navbar-list {
+.nav-desktop {
   display: flex;
-  margin-top: 25.5px;
-  margin-bottom: 25.5px;
+  justify-content: center;
+  align-items: center;
   gap: 40px;
   padding: 0;
+  margin: 0;
 }
 
 .nav-link {
+  display: flex;
   color: var(--brand-color-navy-blue);
   font-size: 16px;
   font-weight: 500;
@@ -112,20 +120,24 @@ h2 {
   letter-spacing: 0.02em;
   text-decoration: none;
   padding: 24px 0;
-  position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
-.nav-link:focus {
+.nav-link:focus,
+.nav-link:active {
+  border-color: var(--brand-color-ocean);
   color: var(--brand-color-ocean);
+  position: relative;
 }
 
-.nav-link-studio {
+.nav-link-active {
+  border-color: var(--brand-color-ocean);
   color: var(--brand-color-ocean);
+  position: relative;
 }
 
-.nav-link-studio::after {
+.nav-link-active::after {
   content: "";
   position: absolute;
   left: 0;
@@ -138,25 +150,27 @@ h2 {
   border-color: var(--brand-color-ocean);
 }
 
-
-.header-address {
+.address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--brand-color-slate);
   font-style: normal;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 24px;
   letter-spacing: 0.32px;
 }
 
-.hearder-address-elements {
-  display: flex;
-  gap: 40px;
-  padding-left: 251px;
-}
-
-.header-address:hover,
-.header-address:focus {
+.address:hover,
+.address:focus {
   color: var(--brand-color-cloud);
 }
+
+.address-contact {
+  display: flex;
+  gap: 40px;
+}
+
 .contact {
   color: var(--brand-color-slate);
   font-size: 16px;
@@ -455,9 +469,9 @@ h2 {
 
 /* index.html */
 
-/* Section 1 from main - index.html */
+/* Hero Image - index.html */
 
-.first-section {
+.order-service {
   --header-image-bg-color: rgba(46, 47, 66, 0.7);
 
   background-image: linear-gradient(
@@ -476,7 +490,7 @@ h2 {
   margin-inline: auto;
 }
 
-.first-section-title {
+.order-service-title {
   font-family: var(--header-font-family);
   font-size: 56px;
   font-style: normal;
@@ -489,7 +503,7 @@ h2 {
   margin: 0 auto;
 }
 
-.first-section-button {
+.order-service-button {
   font-family: var(--header-font-family);
   font-size: 16px;
   font-weight: 500;
@@ -507,14 +521,15 @@ h2 {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.first-section-button:hover,
-.first-section-button:focus {
+.order-service-button:hover,
+.order-service-button:focus {
   background-color: var(--brand-color-ocean);
 }
-/* Section 2 from main - index.html */
+/* Section 1 from main - index.html */
 
-.second-section {
-  padding: 120px 0px;
+.section-one {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .svg-container {
@@ -540,28 +555,20 @@ h2 {
   overflow: hidden;
 }
 
-.second-section-list {
+.features {
   display: flex;
   gap: 24px;
-  padding: 0;
 }
 
-.second-section-listli {
-  width: calc((100% - 72px) / 4);
+.features-elements {
+  display: flex;
   width: 100%;
   min-width: 264px;
   flex-direction: column;
-  align-items: flex-start;
   gap: 8px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.second-section-list-title {
+.features-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -570,9 +577,10 @@ h2 {
   font-style: normal;
   background-color: #ffffffff;
   margin-bottom: 8px;
+  margin-top: 8px;
 }
 
-.second-section-list-paragraf {
+.features-paragraf {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
