@@ -589,16 +589,16 @@ h2 {
   color: var(--brand-color-slate);
 }
 
-/* Section 3 from main - index.html */
+/* Section 2 from main - index.html */
 
-.third-section {
+.section-two {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding-bottom: 120px;
 }
 
-.third-section-main-title {
+.what-we-do-title {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.72px;
@@ -610,19 +610,13 @@ h2 {
   margin-bottom: 72px;
 }
 
-.third-section-list {
+.what-we-do {
   display: flex;
-  flex-direction: row;
-  width: 1128px;
   gap: 24px;
   justify-content: center;
-  align-items: center;
-  padding-bottom: 120px;
-  padding-left: 156px;
-  padding-right: 156px;
 }
 
-.third-section-listli {
+.what-we-do-img {
   width: calc((100% - 48px) / 3);
   width: 100%;
   min-width: 360px;
@@ -632,21 +626,21 @@ h2 {
   align-items: flex-start;
 }
 
-/* Section 4 from main - index.html */
+/* Section 3 from main - index.html */
 
-.fourth-section-main {
+.section-three {
   background: var(--brand-color-cloud);
   display: flex;
   padding: 120px 0;
 }
 
-.fourth-section-list {
+.our-team {
   display: flex;
   gap: 24px;
   padding: 0;
 }
 
-.fourth-section {
+.team-card {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -665,11 +659,11 @@ h2 {
   margin-bottom: 72px;
 }
 
-.forth-section-div {
+.card-content {
   padding: 32px 0;
 }
 
-.forth-section-h-titles {
+.content-title {
   color: var(--brand-color-navy-blue);
   text-align: center;
   font-family: var(--header-font-family);
@@ -680,7 +674,7 @@ h2 {
   margin-bottom: 8px;
 }
 
-.forth-section-paragraf {
+.content-paragraf {
   color: var(--brand-color-slate);
   text-align: center;
   font-family: var(--header-font-family);
@@ -729,7 +723,7 @@ h2 {
 
 /* Section 5 from main - index.html */
 
-.fifth-section {
+.section-four {
   padding-top: 120px;
   padding-bottom: 120px;
   font-weight: 500;
@@ -747,14 +741,14 @@ h2 {
   text-align: center;
 }
 
-.customers-list {
+.customers {
   display: flex;
   align-items: flex-start;
   gap: 24px;
   padding: 0;
 }
 
-.customers-list-li {
+.customers-logo {
   width: calc((100% - 120px) / 6);
   height: 88px;
 }
