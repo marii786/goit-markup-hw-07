@@ -9,6 +9,10 @@
   --brand-color-cloud: #f4f4fd;
   --brand-color-cornflower: #e7e9fc;
   --brand-color-white: #ffffff;
+
+  --padding-vertical-global: 96px;
+  --padding-vertical-second-global: 48px;
+  --padding-horizontal-global: 16px;
 }
 /* Global styles */
 body {
@@ -70,7 +74,7 @@ h2 {
 .container {
   max-width: 1158px;
   margin: 0 auto;
-  padding: 0 15px;
+  /* padding: 0 15px; */
 }
 
 .navbar {
@@ -103,7 +107,7 @@ h2 {
 }
 
 .nav-desktop {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   gap: 40px;
@@ -151,7 +155,7 @@ h2 {
 }
 
 .address {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   color: var(--brand-color-slate);
@@ -318,7 +322,8 @@ h2 {
 }
 
 .logo-web-footer {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-paragraf {
@@ -347,17 +352,21 @@ h2 {
 
 .component {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-text {
-  margin-right: 120px;
   flex-direction: column;
   display: inline-block;
 }
 
 .footer-social-media-title {
+  display: flex;
+  justify-content: center;
   margin-bottom: 16px;
+  margin-top: 72px;
   font-family: var(--header-font-family);
   font-weight: 500;
   font-size: 16px;
@@ -388,7 +397,6 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -403,30 +411,36 @@ h2 {
 }
 
 .footer-form-paragraf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--brand-color-white);
-  padding-left: 80px;
+  margin-top: 72px;
 }
 
 .footer-form {
   display: flex;
-  padding-left: 80px;
-  gap: 24px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 }
 .footer-form-label {
   display: inline-flex;
-  gap: 24px;
 }
 
 .footer-form-input {
-  width: 264px;
+  width: 398px;
   height: 40px;
   border: 1px solid var(--brand-color-white);
-  background-color: transparent;
+  opacity: 0.3;
+  background-color: var(--brand-color-navy-blue);
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -492,15 +506,17 @@ h2 {
 
 .order-service-title {
   font-family: var(--header-font-family);
-  font-size: 56px;
+  font-size: 36px;
   font-style: normal;
   text-align: center;
   font-weight: 700;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
+  line-height: 40px;
+  letter-spacing: 0.72px;
   max-width: 496px;
   padding-bottom: 48px;
   margin: 0 auto;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .order-service-button {
@@ -508,7 +524,7 @@ h2 {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.64px;
   background-color: var(--brand-color-iris);
   color: #ffffff;
   display: block;
@@ -528,8 +544,7 @@ h2 {
 /* Section 1 from main - index.html */
 
 .section-one {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: var(--padding-vertical-global) var(--padding-horizontal-global);
 }
 
 .svg-container {
@@ -556,7 +571,7 @@ h2 {
 }
 
 .features {
-  display: flex;
+  /* display: flex; */
   gap: 24px;
 }
 
@@ -592,10 +607,10 @@ h2 {
 /* Section 2 from main - index.html */
 
 .section-two {
-  display: flex;
+  display: none;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-bottom: 120px;
+  /* padding-bottom: 120px; */
 }
 
 .what-we-do-title {
@@ -630,14 +645,19 @@ h2 {
 
 .section-three {
   background: var(--brand-color-cloud);
-  display: flex;
-  padding: 120px 0;
+  /* display: flex; */
+  padding: var(--padding-vertical-global) var(--padding-horizontal-global);
 }
 
 .our-team {
-  display: flex;
-  gap: 24px;
-  padding: 0;
+  /* display: flex; */
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 72px;
+  padding-right: 72px;
+  padding-left: 72px;
 }
 
 .team-card {
@@ -646,6 +666,7 @@ h2 {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  width: fit-content;
 }
 
 .our-team-title {
@@ -724,8 +745,6 @@ h2 {
 /* Section 5 from main - index.html */
 
 .section-four {
-  padding-top: 120px;
-  padding-bottom: 120px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -734,6 +753,7 @@ h2 {
 }
 
 .customers-title {
+  padding-top: 96px;
   font-size: 36px;
   line-height: 1.11;
   color: var(--brand-color-navy-blue);
@@ -743,14 +763,18 @@ h2 {
 
 .customers {
   display: flex;
-  align-items: flex-start;
-  gap: 24px;
-  padding: 0;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  row-gap: 72px;
+  margin-bottom: 96px;
 }
 
 .customers-logo {
-  width: calc((100% - 120px) / 6);
+  width: 190px;
   height: 88px;
+  flex-shrink: 0;
 }
 
 .customers-link {
@@ -1000,4 +1024,21 @@ h2 {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 16px 32px;
   margin-left: 95px;
+}
+
+@media screen and (width >= 768px) {
+  root {
+    --padding-vertical-global: 96px;
+    --padding-vertical-second-global: 72px;
+    --padding-horizontal-global: 16px;
+    --padding-horizontal-second-global: 108px;
+  }
+}
+
+@media screen and (width >= 1158px) {
+  root {
+    --padding-vertical-global: 120px;
+    --padding-vertical-second-global: 48px;
+    --padding-horizontal-global: 156px;
+  }
 }
