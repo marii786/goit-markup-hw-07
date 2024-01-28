@@ -25,6 +25,10 @@ a {
   text-decoration: none;
 }
 
+div {
+  display: block;
+}
+
 p {
   margin: 0;
 }
@@ -327,7 +331,7 @@ h2 {
 
 .footer {
   background-color: var(--brand-color-navy-blue);
-  padding: 100px 0;
+  padding: 97.5px 0;
 }
 
 .logo-web-footer {
@@ -366,6 +370,12 @@ h2 {
   align-items: center;
 }
 
+.component-container {
+  display: flex;
+  flex-direction: column;
+  gap: 72px
+}
+
 .footer-text {
   flex-direction: column;
   display: inline-block;
@@ -374,8 +384,6 @@ h2 {
 .footer-social-media-title {
   display: flex;
   justify-content: center;
-  margin-bottom: 16px;
-  margin-top: 72px;
   font-family: var(--header-font-family);
   font-weight: 500;
   font-size: 16px;
@@ -391,6 +399,7 @@ h2 {
   justify-content: center;
   list-style-type: none;
   padding: 0;
+  margin-bottom: 72px;
 }
 
 .footer-social-media-list {
@@ -429,7 +438,6 @@ h2 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--brand-color-white);
-  margin-top: 72px;
 }
 
 .footer-form {
@@ -1393,14 +1401,14 @@ h2 {
 @media screen and (min-width: 768px) and (max-width: 1158px) {
   .section-four {
     padding: 96px;
-}
+  }
   .customers-title {
     font-size: 36px;
     line-height: 1.11;
     color: var(--brand-color-navy-blue);
     margin: 0;
     text-align: center;
-}
+  }
   .customers {
     display: flex;
     flex-direction: row;
@@ -1411,24 +1419,24 @@ h2 {
     justify-content: center;
     margin: 0;
     padding-top: 72px;
-}
-.customers-logo {
-  width: 168px;
-  height: 88px;
-}
+  }
+  .customers-logo {
+    width: 168px;
+    height: 88px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
   .section-four {
     padding: 120px;
-}
+  }
   .customers-title {
     font-size: 36px;
     line-height: 1.11;
     color: var(--brand-color-navy-blue);
     margin: 0;
     text-align: center;
-}
+  }
   .customers {
     display: flex;
     flex-wrap: nowrap;
@@ -1437,9 +1445,263 @@ h2 {
     align-items: center;
     margin: 0;
     padding-top: 71px;
+  }
+  .customers-logo {
+    width: 168px;
+    height: 88px;
+  }
 }
-.customers-logo {
-  width: 168px;
-  height: 88px;
+
+/* Media Query - Footer */
+
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+  .footer {
+    background-color: var(--brand-color-navy-blue);
+    padding: 96px 0;
+  }
+  .component {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .component-container {
+    display: flex;
+    flex-direction: row;
+    gap: 24px
+  }
+  .footer-social-media-title {
+    display: flex;
+    justify-content: flex-start;
+    font-family: var(--header-font-family);
+    font-weight: 500;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--brand-color-white);
+  }
+
+  .logo-web-footer {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .footer-social-media {
+    display: inline-block;
+  }
+
+  .footer-form-paragraf {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 72px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--brand-color-white);
+  }
+  .footer-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+  .footer-form-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid var(--brand-color-white);
+    opacity: 0.3;
+    background-color: var(--brand-color-navy-blue);
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--brand-color-white);
 }
+.footer-social-media-container {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0px;
+}
+}
+
+@media screen and (min-width: 1158px) {
+  .footer {
+    background-color: var(--brand-color-navy-blue);
+    padding: 100px 0;
+  }
+  
+  .logo-web-footer {
+    display: inline-block;
+  }
+  
+  .footer-paragraf {
+    font-size: 16px;
+    color: var(--brand-color-cloud);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    max-width: 264px;
+    padding-top: 17.5px;
+  }
+  
+  .logo-studio-footer {
+    color: var(--brand-color-cloud);
+    font-size: 18px;
+    font-style: "Raleway", sans-serif;
+    line-height: 1.17;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    font-weight: 800px;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 16px;
+    margin: 0;
+  }
+  
+  .component {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .component-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
+  
+  .footer-text {
+    margin-right: 120px;
+    flex-direction: column;
+    display: inline-block;
+  }
+  
+  .footer-social-media-title {
+    justify-content: flex-start;
+    margin-bottom: 16px;
+    font-family: var(--header-font-family);
+    font-weight: 500;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--brand-color-white);
+  }
+  
+  .footer-social-media-container {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-social-media-list {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .footer-social-media-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--brand-color-iris);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .footer-social-media-link:hover,
+  .footer-social-media-link:focus {
+    background-color: #31d0aa;
+    background-color: #31d0aa;
+  }
+  
+  .footer-social-media-icon {
+    fill: var(--brand-color-cloud);
+  }
+  
+  .footer-form-paragraf {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--brand-color-white);
+    padding-left: 80px;
+  }
+
+  .footer-form {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-left: 80px;
+    gap: 24px;
+  }
+  .footer-form-label {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+  
+  .footer-form-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid var(--brand-color-white);
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--brand-color-white);
+  }
+  
+  .modal-textarea::placeholder {
+    color: rgba(46, 47, 66, 0.4);
+  }
+  
+  .footer-form-input::placeholder {
+    color: var(--brand-color-white);
+  }
+  
+  .footer-form-button {
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--header-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--brand-color-white);
+    cursor: pointer;
+    background-color: var(--brand-color-iris);
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .footer-form-button-icon {
+    margin-left: 16px;
+    fill: var(--brand-color-white);
+  }
+  
 }
