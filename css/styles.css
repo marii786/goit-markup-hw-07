@@ -214,13 +214,13 @@ h2 {
 }
 
 .filters {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 24px;
-    row-gap: 16px;
-    margin-top: 0;
-    margin-bottom: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 24px;
+  row-gap: 16px;
+  margin-top: 0;
+  margin-bottom: 48px;
 }
 
 .button-filters {
@@ -1704,5 +1704,35 @@ h2 {
   .footer-form-button-icon {
     margin-left: 16px;
     fill: var(--brand-color-white);
+  }
+}
+
+/* Media Query - Portfolio */
+
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+  .portfolio {
+    padding: 64px 16px 96px 16px;
+  }
+  
+  .filters {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .portfolio {
+    padding: 112px 156px 120px 156px;
+  }
+  
+  .filters {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
   }
 }
