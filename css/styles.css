@@ -295,6 +295,10 @@ h2 {
   overflow: hidden;
 }
 
+.mobile-images {
+  width: 396px;
+}
+
 .card-content-header {
   color: var(--brand-color-navy-blue);
   font-size: 20px;
