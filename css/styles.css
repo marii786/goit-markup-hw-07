@@ -1764,4 +1764,8 @@ h2 {
     row-gap: 48px;
     padding: 0;
   }
+
+  .mobile-images {
+    width: 360px;
+  }
 }
