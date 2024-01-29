@@ -1727,23 +1727,37 @@ h2 {
     row-gap: 72px;
     margin: 0;
     gap: 24px;
-}
-  .project-cards-row {
-width: 356px;
   }
-
+  .project-cards-row {
+    width: 356px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
-  .portfolio {
-    padding: 112px 156px 120px 156px;
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
   }
-  
+
+  .portfolio {
+    padding: 112px 0 120px 0;
+  }
+
   .filters {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     gap: 24px;
     margin-bottom: 72px;
+  }
+
+  .project-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    padding: 0;
   }
 }
