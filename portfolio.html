@@ -60,15 +60,14 @@
           </ul>
         </address>
         <!-- Hamburger Menu-->
-        <button class="hamburger-menu" type="button" js-open-menu="">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="22"
-            viewBox="0 0 32 22"
-            fill="none"
-          >
-            <g clip-path="url(#clip0_297053_2156)">
+        <button
+          class="hamburger-menu js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="32" height="22">
+            <g fill="none" stroke="#2E2F42" stroke-width="3">
               <path
                 d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861"
                 stroke="#2E2F42"
@@ -77,15 +76,88 @@
                 stroke-linejoin="round"
               />
             </g>
-            <defs>
-              <clipPath id="clip0_297053_2156">
-                <rect width="32" height="22" fill="white" />
-              </clipPath>
-            </defs>
           </svg>
         </button>
       </div>
+      <!-- Mobile Button -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button type="button" class="close-button js-close-menu">
+          <svg width="8" height="8" class="md-sv">
+            <use href="./images/close-back.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+        <!-- Navigation -->
+        <nav class="mobile-navbar">
+          <ul class="mobile-menu list">
+            <li>
+              <a
+                class="mobile-nav-link link"
+                href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li>
+              <a class="mobile-nav-link mobile-nav-link-active link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a class="mobile-nav-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="address-container">
+          <!-- Address -->
+          <address class="mobile-address">
+            <ul class="mobile-address-contact list">
+              <li>
+                <a class="phone-number link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a class="email-address link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <!-- Mobile Social Media Links-->
+          <ul class="list mobile-menu-social-media">
+            <li class="mobile-social-media">
+              <a href="" class="mobile-social-media-link">
+                <svg width="24" height="24" class="mobile-social-media-icon">
+                  <use href="./images/icons.svg#icon-instagram-2" />
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-media">
+              <a href="" class="mobile-social-media-link">
+                <svg width="24" height="24" class="mobile-social-media-icon">
+                  <use href="./images/icons.svg#icon-twitter-1" />
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-media">
+              <a href="" class="mobile-social-media-link">
+                <svg width="24" height="24" class="mobile-social-media-icon">
+                  <use href="./images/icons.svg#icon-facebook-1" />
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-media">
+              <a href="" class="mobile-social-media-link">
+                <svg width="24" height="24" class="mobile-social-media-icon">
+                  <use href="./images/icons.svg#icon-linkedin-1" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
+
     <!-- Main Section -->
     <main>
       <!-- Filters -->
